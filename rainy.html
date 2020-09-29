@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>Rainy</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="shortcut icon" href="img/rain.icon">
+<style type="text/css">
+	body{
+		background-color: rgb(4,1,25); 
+	}
+	.f{
+		color: #FFFFFF;
+		text-align: center;
+		font-family: 'marcellus_scregular';
+		font-weight: bold;
+		font-size: 60px;
+		display: block;
+	}
+	.f h1{
+		text-shadow: 6px 2px 5px rgb(150,150,150),2px -2px 4px rgb(0,0,200);
+	}
+	.f h1:first-letter{
+		font-size: 1.4em;
+	}
+	.f h2{
+		font-size: 25px;
+	}
+	.f h2:first-letter{
+		font-size: 1.3em;
+	}
+	.end{
+		bottom: 0%
+		font-family:"Lucida Grande","ff-nuvo-web-pro-1","ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",sans-serif; 
+		color: #6F6F6F;
+		font-size: 10pt;
+}
+</style>
+<style type="javascript"></style>
+</head>
+
+<body style="background-image:url('img/gif/3.gif');" onload="init()">
+
+<script type="text/javascript">
+function init() {
+	setInterval(function(){updatebg();}, 5000);
+	setInterval(function(){updatebg();}, 9751);
+	setInterval(function(){updatebg();}, 6457);
+}
+var bgimg = 1;
+function updatebg() {
+	document.body.style.backgroundImage = 'url(img/gif/'+bgimg+'.gif)';
+	bgimg = bgimg + 1;  if (bgimg>16) { bgimg = 1; }
+}
+</script>
+<div class="f">
+	<h1>RAINY</h1>
+</div>
+<div class="f">
+	<h2>Helps you to focus, relax, and sleep.</h2>	
+</div>
+<audio src="audio/rainy.m4a" autoplay="true" loop="true" hidden="true"></audio>
+</embed>
+<!-- http://107.182.230.196/audio1110/0.m4a -->
+<footer>
+	<div class="end" align="middle">
+<i>&copy;Suxve in XMU&nbsp;&nbsp;&nbsp;&nbsp;Since 2017.10.24</i>			
+	</div>
+</footer>
+</body>
+</html>
